@@ -1,0 +1,10 @@
+space = input("경기장은 어디입니까? ")
+winner = input("승리팀은 어디입니까? ")
+loser = input("패배팀은 어디입니까? ")
+player = input("우수선수는 누구입니까? ")
+score = input("스코어는 몇 대 몇 입니까? ")
+
+print("오늘",space,"에서 야구 경기가 열렸습니다.")
+print(winner,"와", loser,"는 치열한 공방전을 펼쳤습니다.")
+print(player,"가 맹활약을 했습니다.")
+print("결국",winner,"가", score,"로 이겼습니다.")
