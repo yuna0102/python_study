@@ -14,7 +14,11 @@ color = turtle.textinput("", "색상을 입력하시오:")
 t.fillcolor(color) #색깔 선택
 t.begin_fill() #채우기 시작
 
-if figure == ("정사각형" or "4"):
+if figure == "정사각형" or figure == "4": 
+    ###논리연산시 유의사항###
+    #정사각형 or 4 : 이런 식으로 가게되면 4라는 값은 True를 갖게됨. 그래서 틀림
+    #0이외의 모든 값은 True, 0은 False로 추론함
+    #figure == ("정사각형" or "4") : 이렇게 되면 뒤에 4라는 조건은 인식이 안 됨
     for i in range(4):
         t.fd(length)
         t.left(90)
